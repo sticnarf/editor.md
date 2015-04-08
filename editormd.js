@@ -3699,7 +3699,7 @@
             var katexHandle = function() {
                 div.find("." + editormd.classNames.tex).each(function(){
                     var tex  = $(this);
-                    katex.render(tex.html(), tex[0]);
+                    katex.render(tex.text(), tex[0]);
                 });
             };
             
